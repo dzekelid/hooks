@@ -33,7 +33,7 @@ apis:
   tags: Hooks
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/hooks/master/_listings/box/webhooks-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery/hooks/master/_listings/box/webhooks-webhook-id-get.md
 x-common:
 - type: x-base
   url: https://api.box.com/
