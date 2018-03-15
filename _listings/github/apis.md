@@ -40,7 +40,7 @@ apis:
   tags: Hooks
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/hooks/master/_listings/github/repos-owner-repo-hooks-hookid-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery/hooks/master/_listings/github/repos-owner-repo-hooks-hookid-patch.md
 x-common:
 - type: x-net-library
   url: https://github.com/octokit/octokit.net
