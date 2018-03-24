@@ -35,7 +35,7 @@ apis:
   tags: Hooks
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/sendgrid/user-webhooks-event-test-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/sendgrid/user-webhooks-parse-settings-get.md
 x-common:
 - type: x-net-library
   url: https://sendgrid.com/docs/Code_Examples/csharp.html
