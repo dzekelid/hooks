@@ -25,7 +25,7 @@ apis:
   tags: Hooks
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/users-username-hooks-uid-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/users-username-hooks-uid-parameters.md
 x-common:
 - type: x-developer
   url: https://developer.atlassian.com/cloud/bitbucket/
