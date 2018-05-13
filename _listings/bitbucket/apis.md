@@ -26,17 +26,25 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/users-username-hooks-uid-put.md
-- name: Bitbucket Parameters Users Username Hooks U
-  description: Parameters users username hooks u
+- name: Bitbucket Update Users Username Hooks U
+  description: |-
+    Updates the specified webhook subscription.
+
+    The following properties can be mutated:
+
+    * `description`
+    * `url`
+    * `active`
+    * `events`
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bitbucket-logo.png
   humanURL: https://bitbucket.org/
   baseURL: https://api.bitbucket.org//2.0
   tags: Hooks
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/users-username-hooks-uid-parameters.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/users-username-hooks-uid-put.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/users-username-hooks-uid-parameters-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/users-username-hooks-uid-put-postman.md
 x-common:
 - type: x-developer
   url: https://developer.atlassian.com/cloud/bitbucket/
