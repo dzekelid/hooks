@@ -36,18 +36,22 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/sendgrid/user-webhooks-parse-stats-get.md
-- name: SendGrid Patch User Webhooks Parse Settings Hostname
+- name: SendGrid Get User Webhooks Parse Stats
   description: |-
-    **This endpoint allows you to update a specific inbound parse setting.**
+    **This endpoint allows you to retrieve the statistics for your Parse Webhook useage.**
 
-    The inbound parse webhook allows you to have incoming emails parsed, extracting some or all of the contnet, and then have that content POSTed by SendGrid to a URL of your choosing. For more information, please see our [User Guide](https://sendgrid.com/docs/API_Reference/Webhooks/parse.html).
+    SendGrid's Inbound Parse Webhook allows you to parse the contents and attachments of incomming emails. The Parse API can then POST the parsed emails to a URL that you specify. The Inbound Parse Webhook cannot parse messages greater than 20MB in size, including all attachments.
+
+    There are a number of pre-made integrations for the SendGrid Parse Webhook which make processing events easy. You can find these integrations in the [Library Index](https://sendgrid.com/docs/Integrate/libraries.html#-Webhook-Libraries).
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/sendgrid-logo.png
   humanURL: https://sendgrid.com/
   baseURL: https://api.sendgrid.com//v3
   tags: Hooks
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/sendgrid/user-webhooks-parse-settings-hostname-patch.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/sendgrid/user-webhooks-parse-stats-get.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/sendgrid/user-webhooks-parse-stats-get-postman.md
 x-common:
 - type: x-net-library
   url: https://sendgrid.com/docs/Code_Examples/csharp.html
