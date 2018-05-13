@@ -1,11 +1,14 @@
 ---
 swagger: "2.0"
 info:
-  title: SendGrid
-  description: 'The SendGrid Web API V3 Documentation. This is the entirety of the
-    documented v3 endpoints. We have updated all the descriptions, parameters, requests,
-    and responses. Authentication Every endpoint requires Authentication in the form
-    of an Authorization Header: Authorization: Bearer API_KEY'
+  title: SendGrid Patch User Webhooks Event Settings
+  description: "**This endpoint allows you to update your current event webhook settings.**\n\nIf
+    an event type is marked as `true`, then the event webhook will include information
+    about that event.\n\nSendGrid\u2019s Event Webhook will notify a URL of your choice
+    via HTTP POST with information about events that occur as SendGrid processes your
+    email.\n\nCommon uses of this data are to remove unsubscribes, react to spam reports,
+    determine unengaged recipients, identify bounced email addresses, or create advanced
+    analytics of your email program."
   version: 1.0.0
 host: api.sendgrid.com
 basePath: /v3
