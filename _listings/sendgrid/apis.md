@@ -36,21 +36,20 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/sendgrid/user-webhooks-parse-stats-get.md
-- name: SendGrid Patch User Webhooks Event Settings
-  description: "**This endpoint allows you to update your current event webhook settings.**\n\nIf
-    an event type is marked as `true`, then the event webhook will include information
-    about that event.\n\nSendGrid\u2019s Event Webhook will notify a URL of your choice
-    via HTTP POST with information about events that occur as SendGrid processes your
-    email.\n\nCommon uses of this data are to remove unsubscribes, react to spam reports,
-    determine unengaged recipients, identify bounced email addresses, or create advanced
-    analytics of your email program."
+- name: SendGrid Add User Webhooks Event Test
+  description: "**This endpoint allows you to test your event webhook by sending a
+    fake event notification post to the provided URL.**\n\nSendGrid\u2019s Event Webhook
+    will notify a URL of your choice via HTTP POST with information about events that
+    occur as SendGrid processes your email.\n\nCommon uses of this data are to remove
+    unsubscribes, react to spam reports, determine unengaged recipients, identify
+    bounced email addresses, or create advanced analytics of your email program."
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/sendgrid-logo.png
   humanURL: https://sendgrid.com/
   baseURL: https://api.sendgrid.com//v3
   tags: Hooks
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/sendgrid/user-webhooks-event-settings-patch.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/sendgrid/user-webhooks-event-test-post.md
 x-common:
 - type: x-net-library
   url: https://sendgrid.com/docs/Code_Examples/csharp.html
