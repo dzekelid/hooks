@@ -26,24 +26,19 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/users-username-hooks-uid-put.md
-- name: Bitbucket Add Users Username Hooks
+- name: Bitbucket Delete Users Username Hooks U
   description: |-
-    Creates a new webhook on the specified user account.
-
-    Account-level webhooks are fired for events from all repositories
-    belonging to that account.
-
-    Note that one can only register webhooks on one's own account, not that
-    of others.
+    Deletes the specified webhook subscription from the given user
+    account.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bitbucket-logo.png
   humanURL: https://bitbucket.org/
   baseURL: https://api.bitbucket.org//2.0
   tags: Hooks
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/users-username-hooks-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/users-username-hooks-uid-delete.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/users-username-hooks-post-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/users-username-hooks-uid-delete-postman.md
 x-common:
 - type: x-developer
   url: https://developer.atlassian.com/cloud/bitbucket/
