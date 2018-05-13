@@ -26,17 +26,24 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/users-username-hooks-uid-put.md
-- name: Bitbucket Parameters Users Username Hooks
-  description: Parameters users username hooks
+- name: Bitbucket Add Users Username Hooks
+  description: |-
+    Creates a new webhook on the specified user account.
+
+    Account-level webhooks are fired for events from all repositories
+    belonging to that account.
+
+    Note that one can only register webhooks on one's own account, not that
+    of others.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bitbucket-logo.png
   humanURL: https://bitbucket.org/
   baseURL: https://api.bitbucket.org//2.0
   tags: Hooks
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/users-username-hooks-parameters.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/users-username-hooks-post.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/users-username-hooks-parameters-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/users-username-hooks-post-postman.md
 x-common:
 - type: x-developer
   url: https://developer.atlassian.com/cloud/bitbucket/
