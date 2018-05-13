@@ -26,9 +26,9 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/users-username-hooks-uid-put.md
-- name: Bitbucket Delete Repositories Username Repo Slug Hooks U
+- name: Bitbucket Get Repositories Username Repo Slug Hooks U
   description: |-
-    Deletes the specified webhook subscription from the given
+    Returns the webhook with the specified id installed on the specified
     repository.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bitbucket-logo.png
   humanURL: https://bitbucket.org/
@@ -36,9 +36,9 @@ apis:
   tags: Hooks
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/repositories-username-repo-slug-hooks-uid-delete.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/repositories-username-repo-slug-hooks-uid-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/repositories-username-repo-slug-hooks-uid-delete-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/repositories-username-repo-slug-hooks-uid-get-postman.md
 x-common:
 - type: x-developer
   url: https://developer.atlassian.com/cloud/bitbucket/
