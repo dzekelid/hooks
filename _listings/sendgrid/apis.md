@@ -36,9 +36,9 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/sendgrid/user-webhooks-parse-stats-get.md
-- name: SendGrid Get User Webhooks Parse Settings Hostname
+- name: SendGrid Patch User Webhooks Parse Settings Hostname
   description: |-
-    **This endpoint allows you to retrieve a specific inbound parse setting.**
+    **This endpoint allows you to update a specific inbound parse setting.**
 
     The inbound parse webhook allows you to have incoming emails parsed, extracting some or all of the contnet, and then have that content POSTed by SendGrid to a URL of your choosing. For more information, please see our [User Guide](https://sendgrid.com/docs/API_Reference/Webhooks/parse.html).
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/sendgrid-logo.png
@@ -47,9 +47,7 @@ apis:
   tags: Hooks
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/sendgrid/user-webhooks-parse-settings-hostname-get.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/sendgrid/user-webhooks-parse-settings-hostname-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/sendgrid/user-webhooks-parse-settings-hostname-patch.md
 x-common:
 - type: x-net-library
   url: https://sendgrid.com/docs/Code_Examples/csharp.html
