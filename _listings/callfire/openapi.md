@@ -1,0 +1,185 @@
+---
+swagger: "2.0"
+x-collection-name: CallFire
+x-complete: 1
+info:
+  title: CallFire
+  description: callfire
+  termsOfService: https://www.callfire.com/legal/terms
+  contact:
+    name: CallFire
+    url: https://www.callfire.com
+    email: support@callfire.com
+  version: 1.0.0
+host: www.callfire.com
+basePath: /v2
+schemes:
+- http
+produces:
+- application/json
+consumes:
+- application/json
+paths:
+  /webhooks:
+    get:
+      summary: Find webhooks
+      description: Searches all webhooks available for a current user. Searches by
+        name, resource, event, callback URL, or whether they are enabled. Returns
+        a paged list of Webhooks
+      operationId: findWebhooks
+      x-api-path-slug: webhooks-get
+      parameters:
+      - in: query
+        name: callback
+        description: A callback URL
+      - in: query
+        name: enabled
+        description: Specifies whether webhook is enabled
+      - in: query
+        name: event
+        description: 'A name of event, available values: started, stopped, finished'
+      - in: query
+        name: fields
+        description: Limit fields received in response
+      - in: query
+        name: limit
+        description: To set the maximum number of records to return in a paged list
+          response
+      - in: query
+        name: name
+        description: A name of a webhook
+      - in: query
+        name: offset
+        description: Offset to the start of a given page
+      - in: query
+        name: resource
+        description: 'A name of a resource, available values: CccCampaign, CallBroadcast,
+          TextBroadcast,  OutboundCall, OutboundText, InboundCall, InboundText, ContactList'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Webhooks
+    post:
+      summary: Create a webhook
+      description: 'Create a Webhook for notification in the CallFire system. Use
+        the webhooks API to receive notifications of important CallFire events. Select
+        the resource to listen to, and then choose the resource events to receive
+        notifications on. When an event triggers, a POST will be made to the callback
+        URL with a payload of notification information. Available resources and their
+        events include ''CccCampaign'': [''started'', ''stopped'', ''finished''],
+        ''CallBroadcast'': [''started'', ''stopped'', ''finished''], ''TextBroadcast'':
+        [''started'', ''stopped'', ''finished''], ''OutboundCall'': [''finished''],
+        ''InboundCall'': [''finished''], ''OutboundText'': [''finished''], ''InboundText'':
+        [''finished''], ''ContactList'': [''validationFinished'', ''validationFailed''].
+        Webhooks support secret token which is used as signing key to HmacSHA1 hash
+        of json payload which is returned in ''X-CallFire-Signature'' header. This
+        header can be used to verify callback POST is coming from CallFire. See [security
+        guide](https://developers.callfire.com/security-guide.html)'
+      operationId: createWebhook
+      x-api-path-slug: webhooks-post
+      parameters:
+      - in: body
+        name: body
+        description: A webhook object
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Webhooks
+  /webhooks/resources:
+    get:
+      summary: Find webhook resources
+      description: 'Searches for webhook resources. Available resources include ''CccCampaign'':
+        [''started'', ''stopped'', ''finished''], ''CallBroadcast'': [''started'',
+        ''stopped'', ''finished''], ''TextBroadcast'': [''started'', ''stopped'',
+        ''finished''], ''OutboundCall'': [''finished''], ''InboundCall'': [''finished''],
+        ''OutboundText'': [''finished''], ''InboundText'': [''finished''], ''ContactList'':
+        [''validationFinished'', ''validationFailed'']'
+      operationId: findWebhookResources
+      x-api-path-slug: webhooksresources-get
+      parameters:
+      - in: query
+        name: fields
+        description: Limit fields received in response
+      responses:
+        200:
+          description: OK
+      tags:
+      - Webhooks
+      - Resources
+  /webhooks/resources/{resource}:
+    get:
+      summary: Find specific webhook resource
+      description: Returns information about supported events for a given webhook
+        resource
+      operationId: getWebhookResource
+      x-api-path-slug: webhooksresourcesresource-get
+      parameters:
+      - in: query
+        name: fields
+        description: Limit fields received in response
+      - in: path
+        name: resource
+        description: A name of a webhook resource
+      responses:
+        200:
+          description: OK
+      tags:
+      - Webhooks
+      - Resources
+      - Resource
+  /webhooks/{id}:
+    delete:
+      summary: Delete a webhook
+      description: Deletes a webhook instance. Will be removed permanently
+      operationId: deleteWebhook
+      x-api-path-slug: webhooksid-delete
+      parameters:
+      - in: path
+        name: id
+        description: An Id of a webhook
+      responses:
+        200:
+          description: OK
+      tags:
+      - Webhooks
+    get:
+      summary: Find a specific webhook
+      description: Returns a single Webhook instance for a given webhook id
+      operationId: getWebhook
+      x-api-path-slug: webhooksid-get
+      parameters:
+      - in: query
+        name: fields
+        description: Limit fields received in response
+      - in: path
+        name: id
+        description: An id of a webhook
+      responses:
+        200:
+          description: OK
+      tags:
+      - Webhooks
+    put:
+      summary: Update a webhook
+      description: Updates the information in existing webhook
+      operationId: updateWebhook
+      x-api-path-slug: webhooksid-put
+      parameters:
+      - in: body
+        name: body
+        description: A webhook object
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: id
+        description: An id of a webhook
+      responses:
+        200:
+          description: OK
+      tags:
+      - Webhooks
+---
