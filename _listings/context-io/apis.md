@@ -6,49 +6,26 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/172-contex
 x-kinRank: "9"
 x-alexaRank: "569975"
 tags: Hooks
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/context-io/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Context.IO Get Accounts Webhooks
-  x-api-slug: context-io
+- name: Context.IO - Get Accounts Webhooks
+  x-api-slug: accountsidwebhooks-get
   description: List WebHooks configured for an account.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/172-context-io.jpg
   humanURL: http://context.io/
-  baseURL: https://api.context.io//2.0///accounts/{id}/webhooks
-  tags: Accounts,Webhooks
+  baseURL: https://api.context.io//2.0/
+  tags: API LIfeyclessss, Stack Network, Technology, SaaS, Mobile, API Provider, Emails,
+    Messages, Profiles, Emails, Service API, Relative Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/context-io/accountsidwebhooks-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/context-io/accountsidwebhooks-get-openapi.md
-- name: Context.IO Post Accounts Webhooks
-  x-api-slug: context-io
-  description: Creates a new WebHook on an account.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/172-context-io.jpg
-  humanURL: http://context.io/
-  baseURL: https://api.context.io//2.0///accounts/{id}/webhooks
-  tags: Accounts,Webhooks
-  properties:
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/context-io/accountsidwebhooks-post-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/context-io/accountsidwebhooks-post-openapi.md
-- name: Context.IO Get Accounts Webhooks Webhook
-  x-api-slug: context-io
-  description: Gets properties of a given WebHook.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/172-context-io.jpg
-  humanURL: http://context.io/
-  baseURL: https://api.context.io//2.0///accounts/{id}/webhooks/{webhook_id}
-  tags: Accounts,Webhooks,Webhook
-  properties:
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/context-io/accountsidwebhookswebhook-id-get-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/context-io/accountsidwebhookswebhook-id-get-openapi.md
-- name: Context.IO Post Accounts Webhooks Webhook
-  x-api-slug: context-io
+- name: Context.IO - Post Accounts Webhooks Webhook
+  x-api-slug: accountsidwebhookswebhook-id-post
   description: |-
     Changes properties of a given WebHook. The only property of a WebHook that can be changed is it's active property. If you want to change the filters or callback urls, delete it and create a new one.
     Changing the active property can be useful in two cases:
@@ -56,37 +33,88 @@ apis:
     - Acting upon a failure notification: If a WebHook fails, your failure_notif_url is called (see creating a WebHook) an its active property becomes 0. Set the active property back to 1 to get it working again.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/172-context-io.jpg
   humanURL: http://context.io/
-  baseURL: https://api.context.io//2.0///accounts/{id}/webhooks/{webhook_id}
-  tags: Accounts,Webhooks,Webhook
+  baseURL: https://api.context.io//2.0/
+  tags: API LIfeyclessss, Stack Network, Technology, SaaS, Mobile, API Provider, Emails,
+    Messages, Profiles, Emails, Service API, Relative Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/context-io/accountsidwebhookswebhook-id-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/context-io/accountsidwebhookswebhook-id-post-openapi.md
-- name: Context.IO Delete Accounts Webhooks Webhook
-  x-api-slug: context-io
+- name: Context.IO - Get Accounts Webhooks
+  x-api-slug: accountsidwebhooks-get
+  description: List WebHooks configured for an account.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/172-context-io.jpg
+  humanURL: http://context.io/
+  baseURL: https://api.context.io//2.0/
+  tags: API LIfeyclessss, Stack Network, Technology, SaaS, Mobile, API Provider, Emails,
+    Messages, Profiles, Emails, Service API, Relative Data
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/context-io/accountsidwebhooks-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/context-io/accountsidwebhooks-get-openapi.md
+- name: Context.IO - Post Accounts Webhooks
+  x-api-slug: accountsidwebhooks-post
+  description: Creates a new WebHook on an account.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/172-context-io.jpg
+  humanURL: http://context.io/
+  baseURL: https://api.context.io//2.0/
+  tags: API LIfeyclessss, Stack Network, Technology, SaaS, Mobile, API Provider, Emails,
+    Messages, Profiles, Emails, Service API, Relative Data
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/context-io/accountsidwebhooks-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/context-io/accountsidwebhooks-post-openapi.md
+- name: Context.IO - Get Accounts Webhooks Webhook
+  x-api-slug: accountsidwebhookswebhook-id-get
+  description: Gets properties of a given WebHook.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/172-context-io.jpg
+  humanURL: http://context.io/
+  baseURL: https://api.context.io//2.0/
+  tags: API LIfeyclessss, Stack Network, Technology, SaaS, Mobile, API Provider, Emails,
+    Messages, Profiles, Emails, Service API, Relative Data
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/context-io/accountsidwebhookswebhook-id-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/context-io/accountsidwebhookswebhook-id-get-openapi.md
+- name: Context.IO - Post Accounts Webhooks Webhook
+  x-api-slug: accountsidwebhookswebhook-id-post
+  description: |-
+    Changes properties of a given WebHook. The only property of a WebHook that can be changed is it's active property. If you want to change the filters or callback urls, delete it and create a new one.
+    Changing the active property can be useful in two cases:
+    - Pause/resume WebHooks: If your application needs up-to-date information when users are logged in the best option is to keep a WebHook with no filters on that account that will be resumed (setting active to 1) when the user logs in and paused (setting active to 0) when the user logs out of your app.
+    - Acting upon a failure notification: If a WebHook fails, your failure_notif_url is called (see creating a WebHook) an its active property becomes 0. Set the active property back to 1 to get it working again.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/172-context-io.jpg
+  humanURL: http://context.io/
+  baseURL: https://api.context.io//2.0/
+  tags: API LIfeyclessss, Stack Network, Technology, SaaS, Mobile, API Provider, Emails,
+    Messages, Profiles, Emails, Service API, Relative Data
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/context-io/accountsidwebhookswebhook-id-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/context-io/accountsidwebhookswebhook-id-post-openapi.md
+- name: Context.IO - Delete Accounts Webhooks Webhook
+  x-api-slug: accountsidwebhookswebhook-id-delete
   description: Cancels a WebHook.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/172-context-io.jpg
   humanURL: http://context.io/
-  baseURL: https://api.context.io//2.0///accounts/{id}/webhooks/{webhook_id}
-  tags: Accounts,Webhooks,Webhook
+  baseURL: https://api.context.io//2.0/
+  tags: API LIfeyclessss, Stack Network, Technology, SaaS, Mobile, API Provider, Emails,
+    Messages, Profiles, Emails, Service API, Relative Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/context-io/accountsidwebhookswebhook-id-delete-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/context-io/accountsidwebhookswebhook-id-delete-openapi.md
-- name: Context.IO
-  x-api-slug: context-io
-  description: Context.IO is the missing email API that makes it easy and fastto integrate
-    your users email data in your application.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/172-context-io.jpg
-  humanURL: http://context.io/
-  baseURL: https://api.context.io//2.0/
-  tags: Hooks
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/context-io/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://constant.contact.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://context.io.stack.network
 - type: x-base
   url: https://api.context.io/
 - type: x-blog

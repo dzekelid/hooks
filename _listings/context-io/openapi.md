@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Context.IO
 x-complete: 1
@@ -92,25 +91,6 @@ paths:
       - Accounts
       - Webhooks
   /accounts/{id}/webhooks/{webhook_id}:
-    get:
-      summary: Get Accounts Webhooks Webhook
-      description: Gets properties of a given WebHook.
-      operationId: getAccountWebhook_
-      x-api-path-slug: accountsidwebhookswebhook-id-get
-      parameters:
-      - in: path
-        name: id
-        description: Unique id of an account accessible through your API key
-      - in: path
-        name: webhook_id
-        description: Unique id of the webhook instance
-      responses:
-        200:
-          description: OK
-      tags:
-      - Accounts
-      - Webhooks
-      - Webhook
     post:
       summary: Post Accounts Webhooks Webhook
       description: |-
@@ -125,6 +105,25 @@ paths:
         name: active
         description: The active property of a WebHook allows you to pause (set to
           0) or resume (set to 1) it
+      - in: path
+        name: id
+        description: Unique id of an account accessible through your API key
+      - in: path
+        name: webhook_id
+        description: Unique id of the webhook instance
+      responses:
+        200:
+          description: OK
+      tags:
+      - Accounts
+      - Webhooks
+      - Webhook
+    get:
+      summary: Get Accounts Webhooks Webhook
+      description: Gets properties of a given WebHook.
+      operationId: getAccountWebhook_
+      x-api-path-slug: accountsidwebhookswebhook-id-get
+      parameters:
       - in: path
         name: id
         description: Unique id of an account accessible through your API key
@@ -157,4 +156,3 @@ paths:
       - Accounts
       - Webhooks
       - Webhook
----

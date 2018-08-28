@@ -7,37 +7,39 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/19810-bitb
 x-kinRank: "8"
 x-alexaRank: "901"
 tags: Hooks
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Bitbucket Get Repositories Username Repo Slug Hooks
-  x-api-slug: bitbucket
+- name: Bitbucket - Get Repositories Username Repo Slug Hooks
+  x-api-slug: repositoriesusernamerepo-slughooks-get
   description: Returns a paginated list of webhooks installed on this repository.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/19810-bitbucket.jpg
   humanURL: http://bitbucket.org
-  baseURL: https://api.bitbucket.org//2.0//repositories/{username}/{repo_slug}/hooks
-  tags: Repositories, Username, Repo, Slug, Hooks
+  baseURL: https://api.bitbucket.org//2.0
+  tags: Imports, Stack Network, Developers, Code, Technology, SaaS, Enterprise, Profiles,
+    Relative Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/repositoriesusernamerepo-slughooks-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/repositoriesusernamerepo-slughooks-get-openapi.md
-- name: Bitbucket Parameters Repositories Username Repo Slug Hooks
-  x-api-slug: bitbucket
+- name: Bitbucket - Parameters Repositories Username Repo Slug Hooks
+  x-api-slug: repositoriesusernamerepo-slughooks-parameters
   description: Parameters repositories username repo slug hooks
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/19810-bitbucket.jpg
   humanURL: http://bitbucket.org
-  baseURL: https://api.bitbucket.org//2.0//repositories/{username}/{repo_slug}/hooks
-  tags: Repositories, Username, Repo, Slug, Hooks
+  baseURL: https://api.bitbucket.org//2.0
+  tags: Imports, Stack Network, Developers, Code, Technology, SaaS, Enterprise, Profiles,
+    Relative Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/repositoriesusernamerepo-slughooks-parameters-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/repositoriesusernamerepo-slughooks-parameters-openapi.md
-- name: Bitbucket Add Repositories Username Repo Slug Hooks
-  x-api-slug: bitbucket
+- name: Bitbucket - Add Repositories Username Repo Slug Hooks
+  x-api-slug: repositoriesusernamerepo-slughooks-post
   description: |-
     Creates a new webhook on the specified repository.
 
@@ -65,55 +67,59 @@ apis:
     internal, non-routed address.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/19810-bitbucket.jpg
   humanURL: http://bitbucket.org
-  baseURL: https://api.bitbucket.org//2.0//repositories/{username}/{repo_slug}/hooks
-  tags: Repositories, Username, Repo, Slug, Hooks
+  baseURL: https://api.bitbucket.org//2.0
+  tags: Imports, Stack Network, Developers, Code, Technology, SaaS, Enterprise, Profiles,
+    Relative Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/repositoriesusernamerepo-slughooks-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/repositoriesusernamerepo-slughooks-post-openapi.md
-- name: Bitbucket Delete Repositories Username Repo Slug Hooks U
-  x-api-slug: bitbucket
+- name: Bitbucket - Delete Repositories Username Repo Slug Hooks U
+  x-api-slug: repositoriesusernamerepo-slughooksuid-delete
   description: |-
     Deletes the specified webhook subscription from the given
     repository.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/19810-bitbucket.jpg
   humanURL: http://bitbucket.org
-  baseURL: https://api.bitbucket.org//2.0//repositories/{username}/{repo_slug}/hooks/{uid}
-  tags: Repositories, Username, Repo, Slug, Hooks, U
+  baseURL: https://api.bitbucket.org//2.0
+  tags: Imports, Stack Network, Developers, Code, Technology, SaaS, Enterprise, Profiles,
+    Relative Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/repositoriesusernamerepo-slughooksuid-delete-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/repositoriesusernamerepo-slughooksuid-delete-openapi.md
-- name: Bitbucket Get Repositories Username Repo Slug Hooks U
-  x-api-slug: bitbucket
+- name: Bitbucket - Get Repositories Username Repo Slug Hooks U
+  x-api-slug: repositoriesusernamerepo-slughooksuid-get
   description: |-
     Returns the webhook with the specified id installed on the specified
     repository.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/19810-bitbucket.jpg
   humanURL: http://bitbucket.org
-  baseURL: https://api.bitbucket.org//2.0//repositories/{username}/{repo_slug}/hooks/{uid}
-  tags: Repositories, Username, Repo, Slug, Hooks, U
+  baseURL: https://api.bitbucket.org//2.0
+  tags: Imports, Stack Network, Developers, Code, Technology, SaaS, Enterprise, Profiles,
+    Relative Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/repositoriesusernamerepo-slughooksuid-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/repositoriesusernamerepo-slughooksuid-get-openapi.md
-- name: Bitbucket Parameters Repositories Username Repo Slug Hooks U
-  x-api-slug: bitbucket
+- name: Bitbucket - Parameters Repositories Username Repo Slug Hooks U
+  x-api-slug: repositoriesusernamerepo-slughooksuid-parameters
   description: Parameters repositories username repo slug hooks u
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/19810-bitbucket.jpg
   humanURL: http://bitbucket.org
-  baseURL: https://api.bitbucket.org//2.0//repositories/{username}/{repo_slug}/hooks/{uid}
-  tags: Repositories, Username, Repo, Slug, Hooks, U
+  baseURL: https://api.bitbucket.org//2.0
+  tags: Imports, Stack Network, Developers, Code, Technology, SaaS, Enterprise, Profiles,
+    Relative Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/repositoriesusernamerepo-slughooksuid-parameters-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/repositoriesusernamerepo-slughooksuid-parameters-openapi.md
-- name: Bitbucket Update Repositories Username Repo Slug Hooks U
-  x-api-slug: bitbucket
+- name: Bitbucket - Update Repositories Username Repo Slug Hooks U
+  x-api-slug: repositoriesusernamerepo-slughooksuid-put
   description: |-
     Updates the specified webhook subscription.
 
@@ -125,39 +131,42 @@ apis:
     * `events`
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/19810-bitbucket.jpg
   humanURL: http://bitbucket.org
-  baseURL: https://api.bitbucket.org//2.0//repositories/{username}/{repo_slug}/hooks/{uid}
-  tags: Repositories, Username, Repo, Slug, Hooks, U
+  baseURL: https://api.bitbucket.org//2.0
+  tags: Imports, Stack Network, Developers, Code, Technology, SaaS, Enterprise, Profiles,
+    Relative Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/repositoriesusernamerepo-slughooksuid-put-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/repositoriesusernamerepo-slughooksuid-put-openapi.md
-- name: Bitbucket Get Teams Username Hooks
-  x-api-slug: bitbucket
+- name: Bitbucket - Get Teams Username Hooks
+  x-api-slug: teamsusernamehooks-get
   description: Returns a paginated list of webhooks installed on this team.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/19810-bitbucket.jpg
   humanURL: http://bitbucket.org
-  baseURL: https://api.bitbucket.org//2.0//teams/{username}/hooks
-  tags: Teams, Username, Hooks
+  baseURL: https://api.bitbucket.org//2.0
+  tags: Imports, Stack Network, Developers, Code, Technology, SaaS, Enterprise, Profiles,
+    Relative Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/teamsusernamehooks-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/teamsusernamehooks-get-openapi.md
-- name: Bitbucket Parameters Teams Username Hooks
-  x-api-slug: bitbucket
+- name: Bitbucket - Parameters Teams Username Hooks
+  x-api-slug: teamsusernamehooks-parameters
   description: Parameters teams username hooks
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/19810-bitbucket.jpg
   humanURL: http://bitbucket.org
-  baseURL: https://api.bitbucket.org//2.0//teams/{username}/hooks
-  tags: Teams, Username, Hooks
+  baseURL: https://api.bitbucket.org//2.0
+  tags: Imports, Stack Network, Developers, Code, Technology, SaaS, Enterprise, Profiles,
+    Relative Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/teamsusernamehooks-parameters-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/teamsusernamehooks-parameters-openapi.md
-- name: Bitbucket Add Teams Username Hooks
-  x-api-slug: bitbucket
+- name: Bitbucket - Add Teams Username Hooks
+  x-api-slug: teamsusernamehooks-post
   description: |-
     Creates a new webhook on the specified team.
 
@@ -167,55 +176,59 @@ apis:
     Note that only admins can install webhooks on teams.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/19810-bitbucket.jpg
   humanURL: http://bitbucket.org
-  baseURL: https://api.bitbucket.org//2.0//teams/{username}/hooks
-  tags: Teams, Username, Hooks
+  baseURL: https://api.bitbucket.org//2.0
+  tags: Imports, Stack Network, Developers, Code, Technology, SaaS, Enterprise, Profiles,
+    Relative Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/teamsusernamehooks-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/teamsusernamehooks-post-openapi.md
-- name: Bitbucket Delete Teams Username Hooks U
-  x-api-slug: bitbucket
+- name: Bitbucket - Delete Teams Username Hooks U
+  x-api-slug: teamsusernamehooksuid-delete
   description: |-
     Deletes the specified webhook subscription from the given team
     account.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/19810-bitbucket.jpg
   humanURL: http://bitbucket.org
-  baseURL: https://api.bitbucket.org//2.0//teams/{username}/hooks/{uid}
-  tags: Teams, Username, Hooks, U
+  baseURL: https://api.bitbucket.org//2.0
+  tags: Imports, Stack Network, Developers, Code, Technology, SaaS, Enterprise, Profiles,
+    Relative Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/teamsusernamehooksuid-delete-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/teamsusernamehooksuid-delete-openapi.md
-- name: Bitbucket Get Teams Username Hooks U
-  x-api-slug: bitbucket
+- name: Bitbucket - Get Teams Username Hooks U
+  x-api-slug: teamsusernamehooksuid-get
   description: |-
     Returns the webhook with the specified id installed on the given
     team account.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/19810-bitbucket.jpg
   humanURL: http://bitbucket.org
-  baseURL: https://api.bitbucket.org//2.0//teams/{username}/hooks/{uid}
-  tags: Teams, Username, Hooks, U
+  baseURL: https://api.bitbucket.org//2.0
+  tags: Imports, Stack Network, Developers, Code, Technology, SaaS, Enterprise, Profiles,
+    Relative Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/teamsusernamehooksuid-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/teamsusernamehooksuid-get-openapi.md
-- name: Bitbucket Parameters Teams Username Hooks U
-  x-api-slug: bitbucket
+- name: Bitbucket - Parameters Teams Username Hooks U
+  x-api-slug: teamsusernamehooksuid-parameters
   description: Parameters teams username hooks u
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/19810-bitbucket.jpg
   humanURL: http://bitbucket.org
-  baseURL: https://api.bitbucket.org//2.0//teams/{username}/hooks/{uid}
-  tags: Teams, Username, Hooks, U
+  baseURL: https://api.bitbucket.org//2.0
+  tags: Imports, Stack Network, Developers, Code, Technology, SaaS, Enterprise, Profiles,
+    Relative Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/teamsusernamehooksuid-parameters-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/teamsusernamehooksuid-parameters-openapi.md
-- name: Bitbucket Update Teams Username Hooks U
-  x-api-slug: bitbucket
+- name: Bitbucket - Update Teams Username Hooks U
+  x-api-slug: teamsusernamehooksuid-put
   description: |-
     Updates the specified webhook subscription.
 
@@ -227,39 +240,42 @@ apis:
     * `events`
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/19810-bitbucket.jpg
   humanURL: http://bitbucket.org
-  baseURL: https://api.bitbucket.org//2.0//teams/{username}/hooks/{uid}
-  tags: Teams, Username, Hooks, U
+  baseURL: https://api.bitbucket.org//2.0
+  tags: Imports, Stack Network, Developers, Code, Technology, SaaS, Enterprise, Profiles,
+    Relative Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/teamsusernamehooksuid-put-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/teamsusernamehooksuid-put-openapi.md
-- name: Bitbucket Get Users Username Hooks
-  x-api-slug: bitbucket
+- name: Bitbucket - Get Users Username Hooks
+  x-api-slug: usersusernamehooks-get
   description: Returns a paginated list of webhooks installed on this user account.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/19810-bitbucket.jpg
   humanURL: http://bitbucket.org
-  baseURL: https://api.bitbucket.org//2.0//users/{username}/hooks
-  tags: Users, Username, Hooks
+  baseURL: https://api.bitbucket.org//2.0
+  tags: Imports, Stack Network, Developers, Code, Technology, SaaS, Enterprise, Profiles,
+    Relative Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/usersusernamehooks-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/usersusernamehooks-get-openapi.md
-- name: Bitbucket Parameters Users Username Hooks
-  x-api-slug: bitbucket
+- name: Bitbucket - Parameters Users Username Hooks
+  x-api-slug: usersusernamehooks-parameters
   description: Parameters users username hooks
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/19810-bitbucket.jpg
   humanURL: http://bitbucket.org
-  baseURL: https://api.bitbucket.org//2.0//users/{username}/hooks
-  tags: Users, Username, Hooks
+  baseURL: https://api.bitbucket.org//2.0
+  tags: Imports, Stack Network, Developers, Code, Technology, SaaS, Enterprise, Profiles,
+    Relative Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/usersusernamehooks-parameters-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/usersusernamehooks-parameters-openapi.md
-- name: Bitbucket Add Users Username Hooks
-  x-api-slug: bitbucket
+- name: Bitbucket - Add Users Username Hooks
+  x-api-slug: usersusernamehooks-post
   description: |-
     Creates a new webhook on the specified user account.
 
@@ -270,55 +286,59 @@ apis:
     of others.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/19810-bitbucket.jpg
   humanURL: http://bitbucket.org
-  baseURL: https://api.bitbucket.org//2.0//users/{username}/hooks
-  tags: Users, Username, Hooks
+  baseURL: https://api.bitbucket.org//2.0
+  tags: Imports, Stack Network, Developers, Code, Technology, SaaS, Enterprise, Profiles,
+    Relative Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/usersusernamehooks-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/usersusernamehooks-post-openapi.md
-- name: Bitbucket Delete Users Username Hooks U
-  x-api-slug: bitbucket
+- name: Bitbucket - Delete Users Username Hooks U
+  x-api-slug: usersusernamehooksuid-delete
   description: |-
     Deletes the specified webhook subscription from the given user
     account.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/19810-bitbucket.jpg
   humanURL: http://bitbucket.org
-  baseURL: https://api.bitbucket.org//2.0//users/{username}/hooks/{uid}
-  tags: Users, Username, Hooks, U
+  baseURL: https://api.bitbucket.org//2.0
+  tags: Imports, Stack Network, Developers, Code, Technology, SaaS, Enterprise, Profiles,
+    Relative Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/usersusernamehooksuid-delete-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/usersusernamehooksuid-delete-openapi.md
-- name: Bitbucket Get Users Username Hooks U
-  x-api-slug: bitbucket
+- name: Bitbucket - Get Users Username Hooks U
+  x-api-slug: usersusernamehooksuid-get
   description: |-
     Returns the webhook with the specified id installed on the given
     user account.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/19810-bitbucket.jpg
   humanURL: http://bitbucket.org
-  baseURL: https://api.bitbucket.org//2.0//users/{username}/hooks/{uid}
-  tags: Users, Username, Hooks, U
+  baseURL: https://api.bitbucket.org//2.0
+  tags: Imports, Stack Network, Developers, Code, Technology, SaaS, Enterprise, Profiles,
+    Relative Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/usersusernamehooksuid-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/usersusernamehooksuid-get-openapi.md
-- name: Bitbucket Parameters Users Username Hooks U
-  x-api-slug: bitbucket
+- name: Bitbucket - Parameters Users Username Hooks U
+  x-api-slug: usersusernamehooksuid-parameters
   description: Parameters users username hooks u
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/19810-bitbucket.jpg
   humanURL: http://bitbucket.org
-  baseURL: https://api.bitbucket.org//2.0//users/{username}/hooks/{uid}
-  tags: Users, Username, Hooks, U
+  baseURL: https://api.bitbucket.org//2.0
+  tags: Imports, Stack Network, Developers, Code, Technology, SaaS, Enterprise, Profiles,
+    Relative Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/usersusernamehooksuid-parameters-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/usersusernamehooksuid-parameters-openapi.md
-- name: Bitbucket Update Users Username Hooks U
-  x-api-slug: bitbucket
+- name: Bitbucket - Update Users Username Hooks U
+  x-api-slug: usersusernamehooksuid-put
   description: |-
     Updates the specified webhook subscription.
 
@@ -330,25 +350,279 @@ apis:
     * `events`
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/19810-bitbucket.jpg
   humanURL: http://bitbucket.org
-  baseURL: https://api.bitbucket.org//2.0//users/{username}/hooks/{uid}
-  tags: Users, Username, Hooks, U
+  baseURL: https://api.bitbucket.org//2.0
+  tags: Imports, Stack Network, Developers, Code, Technology, SaaS, Enterprise, Profiles,
+    Relative Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/usersusernamehooksuid-put-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/usersusernamehooksuid-put-openapi.md
-- name: Bitbucket
-  x-api-slug: bitbucket
-  description: Collaborate on code with inline comments and pull requests. Manage
-    and share your Git repositories to build and ship software, as a team.
+- name: Bitbucket - Get Hook Events
+  x-api-slug: hook-events-get
+  description: |-
+    Returns the webhook resource or subject types on which webhooks can
+    be registered.
+
+    Each resource/subject type contains an `events` link that returns the
+    paginated list of specific events each individual subject type can
+    emit.
+
+    This endpoint is publicly accessible and does not require
+    authentication or scopes.
+
+    Example:
+
+    ```
+    $ curl https://api.bitbucket.org/2.0/hook_events
+
+    {
+        "repository": {
+            "links": {
+                "events": {
+                    "href": "https://api.bitbucket.org/2.0/hook_events/repository"
+                }
+            }
+        },
+        "team": {
+            "links": {
+                "events": {
+                    "href": "https://api.bitbucket.org/2.0/hook_events/team"
+                }
+            }
+        },
+        "user": {
+            "links": {
+                "events": {
+                    "href": "https://api.bitbucket.org/2.0/hook_events/user"
+                }
+            }
+        }
+    }
+    ```
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/19810-bitbucket.jpg
   humanURL: http://bitbucket.org
   baseURL: https://api.bitbucket.org//2.0
-  tags: Hooks
+  tags: Imports, Stack Network, Developers, Code, Technology, SaaS, Enterprise, Profiles,
+    Relative Data, Service API
   properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/hook-events-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/hook-events-get-openapi.md
+- name: Bitbucket - Parameters Hook Events
+  x-api-slug: hook-events-parameters
+  description: Parameters hook events
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/19810-bitbucket.jpg
+  humanURL: http://bitbucket.org
+  baseURL: https://api.bitbucket.org//2.0
+  tags: Imports, Stack Network, Developers, Code, Technology, SaaS, Enterprise, Profiles,
+    Relative Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/hook-events-parameters-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/hook-events-parameters-openapi.md
+- name: Bitbucket - Get Hook Events Subject Type
+  x-api-slug: hook-eventssubject-type-get
+  description: |-
+    Returns a paginated list of all valid webhook events for the
+    specified entity.
+
+    This is public data that does not require any scopes or authentication.
+
+    Example:
+
+    NOTE: The following example is a truncated response object for the `team` `subject_type`.
+    We return the same structure for the other `subject_type` objects.
+
+    ```
+    $ curl https://api.bitbucket.org/2.0/hook_events/team
+    {
+        "page": 1,
+        "pagelen": 30,
+        "size": 21,
+        "values": [
+            {
+                "category": "Repository",
+                "description": "Whenever a repository push occurs",
+                "event": "repo:push",
+                "label": "Push"
+            },
+            {
+                "category": "Repository",
+                "description": "Whenever a repository fork occurs",
+                "event": "repo:fork",
+                "label": "Fork"
+            },
+            ...
+            {
+                "category": "Repository",
+                "description": "Whenever a repository import occurs",
+                "event": "repo:imported",
+                "label": "Import"
+            }
+        ]
+    }
+    ```
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/19810-bitbucket.jpg
+  humanURL: http://bitbucket.org
+  baseURL: https://api.bitbucket.org//2.0
+  tags: Imports, Stack Network, Developers, Code, Technology, SaaS, Enterprise, Profiles,
+    Relative Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/hook-eventssubject-type-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/hook-eventssubject-type-get-openapi.md
+- name: Bitbucket - Parameters Hook Events Subject Type
+  x-api-slug: hook-eventssubject-type-parameters
+  description: Parameters hook events subject type
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/19810-bitbucket.jpg
+  humanURL: http://bitbucket.org
+  baseURL: https://api.bitbucket.org//2.0
+  tags: Imports, Stack Network, Developers, Code, Technology, SaaS, Enterprise, Profiles,
+    Relative Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/hook-eventssubject-type-parameters-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/hook-eventssubject-type-parameters-openapi.md
+- name: Bitbucket - Parameters Hook Events Subject Type
+  x-api-slug: hook-eventssubject-type-parameters
+  description: Parameters hook events subject type
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/19810-bitbucket.jpg
+  humanURL: http://bitbucket.org
+  baseURL: https://api.bitbucket.org//2.0
+  tags: Imports, Stack Network, Developers, Code, Technology, SaaS, Enterprise, Profiles,
+    Relative Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/hook-eventssubject-type-parameters-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/hook-eventssubject-type-parameters-openapi.md
+- name: Bitbucket - Get Hook Events Subject Type
+  x-api-slug: hook-eventssubject-type-get
+  description: |-
+    Returns a paginated list of all valid webhook events for the
+    specified entity.
+
+    This is public data that does not require any scopes or authentication.
+
+    Example:
+
+    NOTE: The following example is a truncated response object for the `team` `subject_type`.
+    We return the same structure for the other `subject_type` objects.
+
+    ```
+    $ curl https://api.bitbucket.org/2.0/hook_events/team
+    {
+        "page": 1,
+        "pagelen": 30,
+        "size": 21,
+        "values": [
+            {
+                "category": "Repository",
+                "description": "Whenever a repository push occurs",
+                "event": "repo:push",
+                "label": "Push"
+            },
+            {
+                "category": "Repository",
+                "description": "Whenever a repository fork occurs",
+                "event": "repo:fork",
+                "label": "Fork"
+            },
+            ...
+            {
+                "category": "Repository",
+                "description": "Whenever a repository import occurs",
+                "event": "repo:imported",
+                "label": "Import"
+            }
+        ]
+    }
+    ```
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/19810-bitbucket.jpg
+  humanURL: http://bitbucket.org
+  baseURL: https://api.bitbucket.org//2.0
+  tags: Imports, Stack Network, Developers, Code, Technology, SaaS, Enterprise, Profiles,
+    Relative Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/hook-eventssubject-type-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/hook-eventssubject-type-get-openapi.md
+- name: Bitbucket - Parameters Hook Events
+  x-api-slug: hook-events-parameters
+  description: Parameters hook events
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/19810-bitbucket.jpg
+  humanURL: http://bitbucket.org
+  baseURL: https://api.bitbucket.org//2.0
+  tags: Imports, Stack Network, Developers, Code, Technology, SaaS, Enterprise, Profiles,
+    Relative Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/hook-events-parameters-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/hook-events-parameters-openapi.md
+- name: Bitbucket - Get Hook Events
+  x-api-slug: hook-events-get
+  description: |-
+    Returns the webhook resource or subject types on which webhooks can
+    be registered.
+
+    Each resource/subject type contains an `events` link that returns the
+    paginated list of specific events each individual subject type can
+    emit.
+
+    This endpoint is publicly accessible and does not require
+    authentication or scopes.
+
+    Example:
+
+    ```
+    $ curl https://api.bitbucket.org/2.0/hook_events
+
+    {
+        "repository": {
+            "links": {
+                "events": {
+                    "href": "https://api.bitbucket.org/2.0/hook_events/repository"
+                }
+            }
+        },
+        "team": {
+            "links": {
+                "events": {
+                    "href": "https://api.bitbucket.org/2.0/hook_events/team"
+                }
+            }
+        },
+        "user": {
+            "links": {
+                "events": {
+                    "href": "https://api.bitbucket.org/2.0/hook_events/user"
+                }
+            }
+        }
+    }
+    ```
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/19810-bitbucket.jpg
+  humanURL: http://bitbucket.org
+  baseURL: https://api.bitbucket.org//2.0
+  tags: Imports, Stack Network, Developers, Code, Technology, SaaS, Enterprise, Profiles,
+    Relative Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/hook-events-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/hooks/master/_listings/bitbucket/hook-events-get-openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://bigoven.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://bitbucket.stack.network
 - type: x-crunchbase
   url: https://crunchbase.com/organization/bitbucket
 - type: x-developer
